@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script src="~/js/pages/market/orders.js" type="module"></script>
+}
+<style>
+    #mgs .dx-toolbar .dx-texteditor{width:94%!important;}
+    #mgs .dx-toolbar .dx-toolbar-after{padding-left:0px;width:100%!important;}
+    #mgs .dx-datagrid-search-panel{margin-left:0px;}
+</style>
+<div class="row">
+    <div class="col col-xl-3">
+        <div id="ctr_tabs"></div>
+        <div id="mgs"></div>
+        <div id="mob-tr"></div>
+    </div>
+    <div class="col-xl-9 p-l-15 p-r-15" id="cnt">
+        @*Toolbar*@ 
+        <div id="mot" class="m-b-5 p-2"></div>
+        @*Load btn *@ 
+        <!--<div id="btnLo" class="m-b-5"></div>-->
+        @*DataGrid*@ 
+        <!--<div id="modg"></div>-->
+        <div class="alert alert-primary fade show" t="MO_ALERT1"></div>
+    </div>
+</div>

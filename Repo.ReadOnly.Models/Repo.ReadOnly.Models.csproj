@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public.Models\Databases.Contexts.Public.Models.csproj" />
+  </ItemGroup>
+
+</Project>

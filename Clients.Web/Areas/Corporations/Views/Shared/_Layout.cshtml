@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    //ViewData["additionalScripts"] = new List<string>() { "/js/prev_char.js" };
+}
+@* Индивидуальное меню корпорации *@
+<div class="container">
+    <div class="d-block">
+        <div class="profile-sidebar">
+            @(await Html.PartialAsync("_Preview"))
+        </div>
+        <div class="media-body mg-t-40 mg-lg-t-0 pd-lg-x-10">
+            @RenderBody()
+        </div>
+    </div>
+</div>

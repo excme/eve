@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Services.Jobs.Market</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Services.EsiConnector.Jobs\Services.EsiConnector.Jobs.csproj" />
+    <ProjectReference Include="..\Services.EsiConnector\Services.EsiConnector.csproj" />
+  </ItemGroup>
+
+</Project>

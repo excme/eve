@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>ca7b102f-6e99-481b-9408-aa42b15c4ee7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>eveDirect.Services.Jobs.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Console" Version="1.4.2" />
+    <PackageReference Include="Hangfire.Heartbeat" Version="0.5.0" />
+    <PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public\Databases.Contexts.Public.csproj" />
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Core\Services.Jobs.Core.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Market\Services.Jobs.Market.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Processings\Services.Jobs.Processings.csproj" />
+    <ProjectReference Include="..\Services.Warface.Jobs\Services.Warface.Jobs.csproj" />
+    <ProjectReference Include="..\Shared.Hangfire.Custom\Shared.Hangfire.Custom.csproj" />
+    <ProjectReference Include="..\Shared.Hangfire.Redis.StackExchange\Shared.Hangfire.Redis.StackExchange.csproj" />
+    <ProjectReference Include="..\Shared.WebHost\Shared.WebHost.csproj" />
+  </ItemGroup>
+
+</Project>

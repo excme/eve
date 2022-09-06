@@ -1,0 +1,7 @@
+﻿@{
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script src="~/js/pages/alliances/lastActions.js" type="module"></script>
+}
+@await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "allyLastActions", pageHeaderTag = "H1_ALLY_LASTACTIONS" })

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>41dbcf4c-47c2-46bc-9477-b2e83d7f57f7</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>eveDirect.Services.Jobs.EventSubscribers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repo.ReadWrite.Events\Repo.ReadWrite.Events.csproj" />
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Services.EsiConnector.Jobs\Services.EsiConnector.Jobs.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Migrations\Services.Jobs.Migrations.csproj" />
+    <ProjectReference Include="..\Shared.EventBus\Shared.EventBus.csproj" />
+    <ProjectReference Include="..\Shared.WebHost\Shared.WebHost.csproj" />
+  </ItemGroup>
+
+</Project>

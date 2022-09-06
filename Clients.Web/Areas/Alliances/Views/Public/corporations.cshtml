@@ -1,0 +1,8 @@
+﻿@using eveDirect.Clients.Web.Models
+@{
+    Layout = "_Layout";
+}
+@section Scripts{
+    <script src="~/js/pages/alliances/corporations.js" type="module"></script>
+}
+@await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "allyCorps", pageHeaderTag = "H3_ALLY_CORPORATIONS" })

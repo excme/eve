@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Z.EntityFramework.Extensions.EFCore</id>
+    <version>3.0.93</version>
+    <title>Z.EntityFramework.Extensions.EFCore</title>
+    <authors>ZZZ Projects</authors>
+    <owners>ZZZ Projects</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://zzzprojects.com/license-agreement/</licenseUrl>
+    <projectUrl>https://entityframework-extensions.net/</projectUrl>
+    <iconUrl>https://zzzprojects.github.io/images/logo/logo-64.png</iconUrl>
+    <description>Microsoft.EntityFrameworkCore Extension Methods
+
+Entity Framework Extensions extends your DbContext with high-performance bulk operations: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, BulkMerge, and more.
+
+Support: SQL Server, MySQL, Oracle, PostgreSQL, SQLite, and more!
+
+Example: https://dotnetfiddle.net/RQ0kFz
+Benchmark: https://dotnetfiddle.net/vZQnZt
+
+**IMPORTANT**
+- For EF Core 5.x, use the latest EF Extensions v5.x version
+- For EF Core 3.x, use the latest EF Extensions v3.x version
+- For EF Core 2.x, use the latest EF Extensions v2.x version
+
+Include free and prime features.</description>
+    <summary>Microsoft.EntityFrameworkCore Extension Methods
+
+Features: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, BulkMerge
+
+Support: SQL Server, MySQL, Oracle, PostgreSQL, SQLite, and more!</summary>
+    <copyright>Copyright © ZZZ Projects</copyright>
+    <tags>Microsoft.EntityFrameworkCore Entity Framework Core entity-framework-core EntityFrameworkCore EFCore EntityFramework Data Bulk Insert BulkInsert Batch Update Delete Merge BulkCopy SqlBulkCopy SaveChanges</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Newtonsoft.Json" version="10.0.2" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="3.0.0" />
+        <dependency id="Microsoft.CSharp" version="4.6.0" />
+        <dependency id="System.Configuration.ConfigurationManager" version="4.6.0" />
+        <dependency id="System.Reflection.Emit" version="4.6.0" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.6.0" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="10.0.2" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="3.1.0" />
+        <dependency id="Microsoft.CSharp" version="4.6.0" />
+        <dependency id="System.Configuration.ConfigurationManager" version="4.6.0" />
+        <dependency id="System.Reflection.Emit" version="4.6.0" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.6.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

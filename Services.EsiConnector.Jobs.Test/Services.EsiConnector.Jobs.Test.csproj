@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Services.EsiConnector.Jobs.Test</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Services.EsiConnector.Jobs\Services.EsiConnector.Jobs.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Market\Services.Jobs.Market.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Processings\Services.Jobs.Processings.csproj" />
+    <ProjectReference Include="..\Shared.GeneralTest\Shared.GeneralTest.csproj" />
+  </ItemGroup>
+
+</Project>

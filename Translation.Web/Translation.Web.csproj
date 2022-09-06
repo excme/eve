@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>9fe625ff-f5e8-4b4c-82c9-198ad34ef2d5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>eveDirect.Translation.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExtreme.AspNet.Core" Version="20.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" Condition="'$(Configuration)' == 'Debug'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared.ConfigurationHelper\Shared.ConfigurationHelper.csproj" />
+    <ProjectReference Include="..\Shared.WebHost\Shared.WebHost.csproj" />
+    <ProjectReference Include="..\Translation.DbContext\Translation.DbContext.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Z.EntityFramework.Extensions.EFCore">
+      <HintPath>..\libs\z.entityframework.extensions.efcore\3.0.93\lib\netstandard2.1\Z.EntityFramework.Extensions.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿@using eveDirect.Clients.Web.Models 
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+<script src="~/js/pages/characters/migrations.js" type="module"></script>
+}
+<h1 class="page-header m-b-10" t="CHARS_MIGRATIONS_H1"></h1>
+<p class="m-b-20" t="CHARS_MIGRATIONS_DESC"></p>
+<div class="row">
+    <div class="col-12">
+        @await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "ch_mr_DataGrid" })
+    </div>
+</div>

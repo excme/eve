@@ -1,0 +1,8 @@
+/*
+	_legend
+*/
+legend {
+	@if $enable-rtl {
+		text-align: right;
+	}
+}

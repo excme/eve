@@ -1,0 +1,95 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script src="~/js/pages/market/contract.js" type="module"></script>
+}
+<style>
+    .dx-fieldset {
+        margin: 30px 0;
+        padding: 0;
+    }
+    .dx-field > .dx-field-label {
+        width: 20%;
+    }
+    .dx-field > .dx-field-value {
+        width: 80%;
+    }
+    .dx-field-label {
+        overflow:inherit
+    }
+</style>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_13"></div>
+                <div class="dx-field-value-static" id="contrZ"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_14"></div>
+                <div class="dx-field-value-static" id="contrT"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_10"></div>
+                <div class="dx-field-value-static" id="contrP"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_15"></div>
+                <div class="dx-field-value-static" id="contrV"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_1"></div>
+                <div class="dx-field-value-static" id="contrB"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_2"></div>
+                <div class="dx-field-value-static" id="contrC"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_11"></div>
+                <div class="dx-field-value-static" id="contrR"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_3"></div>
+                <div class="dx-field-value-static" id="contrDE"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_4"></div>
+                <div class="dx-field-value-static" id="contrDI"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_5"></div>
+                <div class="dx-field-value-static" id="contrDC"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_12"></div>
+                <div class="dx-field-value-static" id="contrSL"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_6"></div>
+                <div class="dx-field-value-static" id="contrEL"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_9"></div>
+                <div class="dx-field-value-static" id="contrII"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label" t="MC_8"></div>
+                <div class="dx-field-value-static" id="contrIC"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        @* Табы *@
+        <div id="mcd-tabs"></div>
+    </div>
+    <div class="col-12">
+        @* Datagrid *@
+        <div id="mcd-dg"></div>
+    </div>
+</div>

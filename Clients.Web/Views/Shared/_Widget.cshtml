@@ -1,0 +1,20 @@
+﻿@using eveDirect.Clients.Web.Models
+@model WidgetModel
+@{
+    var paddingValue = Model.itemPadding ? " p-30" : "";
+}
+<div class="widget-todolist widget-todolist-rounded m-b-20">
+    @if (@Model.pageHeaderTag != null)
+    {
+    <div class="widget-todolist-header">
+        <div class="widget-todolist-header-left">
+            <h4 class="widget-todolist-header-title" t="@Model.pageHeaderTag"></h4>
+        </div>
+    </div>
+    }
+    <div class="widget-todolist-body @paddingValue">
+        <div class="widget-todolist-item">
+            <div id="@Model.divBodyId"></div>
+        </div>
+    </div>
+</div>

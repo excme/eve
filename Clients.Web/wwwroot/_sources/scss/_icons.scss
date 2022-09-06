@@ -1,0 +1,85 @@
+﻿@font-face {
+    font-family: "evedirect";
+    src: url("fonts/evedirect.eot");
+    src: url("fonts/evedirect.eot?#iefix") format("embedded-opentype"), url("fonts/evedirect.woff") format("woff"), url("fonts/evedirect.ttf") format("truetype"), url("fonts/evedirect.svg#evedirect") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before, [class^="i-"]:before, [class*=" i-"]:before {
+    font-family: "evedirect" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*[class^="i-"]:before,
+[class*=" i-"]:before {
+    font-family: "evedirect" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}*/
+
+.i-key:before {
+    content: "\61";
+}
+
+.i-sign-in:before {
+    content: "\62";
+}
+
+.i-user:before {
+    content: "\63";
+}
+
+.i-user-friends:before {
+    content: "\64";
+}
+
+.i-shield:before {
+    content: "\65";
+}
+
+.i-sitemap:before {
+    content: "\66";
+}
+
+.i-tags:before {
+    content: "\67";
+}
+
+.i-caret:before {
+    content: "\68";
+}
+
+.i-starfighter:before {
+    content: "\6a";
+}
+
+.i-angle-double-left:before {
+    content: "\6b";
+}
+
+.i-angle-double-right:before {
+    content: "\6c";
+}
+
+.i-angle-up:before {
+    content: "\69";
+}
+
+.i-star:before {
+    content: "\6d";
+}

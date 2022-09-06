@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Shared.Models</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared.CompareObjects\Shared.CompareObjects.csproj" />
+    <ProjectReference Include="..\Shared.Helper\Shared.Helper.csproj" />
+  </ItemGroup>
+
+</Project>

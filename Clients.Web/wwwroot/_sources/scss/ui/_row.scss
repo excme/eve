@@ -1,0 +1,10 @@
+/*
+	_row
+*/
+.row {
+	& > [class^="col-"]	{
+		&.ui-sortable {
+			min-height: rem(50px);
+		}
+	}
+}

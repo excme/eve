@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    
+    "declaration": true,
+    "declarationMap": true,
+
+    "target": "ES2017",
+
+    // for jquery
+    "allowSyntheticDefaultImports": true,
+
+    "noEmitOnError": false,
+    "removeComments": true,
+    "inlineSourceMap": true,
+    "importHelpers": true,
+
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "outDir": "wwwroot/js"
+  },
+  "include": [
+    "typescripts/**/*"
+  ],
+  "compileOnSave": true
+}

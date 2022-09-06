@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Databases.Contexts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200926103716_u253.cs" />
+    <Compile Remove="Migrations\20200926103716_u253.Designer.cs" />
+    <Compile Remove="Migrations\20200926103844_u25.cs" />
+    <Compile Remove="Migrations\20200926103844_u25.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+    <PackageReference Include="FlexLabs.EntityFrameworkCore.Upsert" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public.Models\Databases.Contexts.Public.Models.csproj" />
+    <ProjectReference Include="..\Shared.ConfigurationHelper\Shared.ConfigurationHelper.csproj" />
+    <ProjectReference Include="..\Shared.Models\Shared.Models.csproj" />
+  </ItemGroup>
+
+</Project>

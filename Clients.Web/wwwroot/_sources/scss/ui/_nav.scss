@@ -1,0 +1,8 @@
+/*
+	_nav
+*/
+.nav {
+	@if $enable-rtl {
+		padding-right: rem(0);
+	}
+}

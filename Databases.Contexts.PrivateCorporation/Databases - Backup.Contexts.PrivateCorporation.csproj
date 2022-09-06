@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <rootRootNamespace></RootNamespace>Databases.Contexts.PrivateCorporationeveDirect.
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.PrivateCorporation.Models\Databases.Contexts.PrivateCorporation.Models.csproj" />
+  </ItemGroup>
+
+</Project>

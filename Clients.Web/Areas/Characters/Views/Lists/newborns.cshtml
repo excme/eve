@@ -1,0 +1,19 @@
+﻿@{ 
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+<script src="~/js/pages/characters/newborn.js" type="module"></script>
+}
+<div class="row mb-4">
+    <div class="col-sm-6">
+        @await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "ch_nb_DataGrid", pageHeaderTag = "CHARS_NEWBORNS_DG1" })
+    </div>
+    <div class="col-sm-6">
+        @await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "ch_nbToCorps_DataGrid", pageHeaderTag = "CHARS_NEWBORNS_DG2" })
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        @await Html.PartialAsync("_Widget", new WidgetModel() { divBodyId = "ch_nb_Chart", pageHeaderTag = "CHARS_NEWBORNS_CH1", itemPadding = true })
+    </div>
+</div>

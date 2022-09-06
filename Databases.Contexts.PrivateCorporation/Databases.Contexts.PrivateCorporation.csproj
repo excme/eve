@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Databases.Contexts.PrivateCorporation</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.PrivateCorporation.Models\Databases.Contexts.PrivateCorporation.Models.csproj" />
+    <ProjectReference Include="..\Databases.Contexts.Private\Databases.Contexts.Private.csproj" />
+  </ItemGroup>
+
+</Project>

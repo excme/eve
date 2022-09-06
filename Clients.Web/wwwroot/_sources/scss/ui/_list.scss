@@ -1,0 +1,9 @@
+/*
+	_list
+*/
+.list-inline,
+.list-unstyled {
+	@if $enable-rtl {
+		padding-right: 0;
+	}
+}

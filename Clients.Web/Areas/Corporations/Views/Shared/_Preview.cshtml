@@ -1,0 +1,64 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xl-6">
+            <div class="row">
+                <div class="col-auto mx-auto col-xl-4">
+                    <div class="portrait">
+                        <a id="corporationPortraitUrl">
+                            <img id="corporationPortrait" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="element-wrapper compact pt-4">
+                        <h2 class="element-header" id="corpPrevName"></h2>
+                        <div class="element-box-tp">
+                            <table class="table table-clean">
+                                <tr>
+                                    <td>
+                                        <div class="value" t="CP_CORPORATION"></div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="value" id="corpPrevCorporation"></div>
+                                    </td>
+                                </tr>
+                                <tr id="prBlAlliance">
+                                    <td>
+                                        <div class="value" t="CP_ALLIANCE"></div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="value" id="corpPrevAlliance"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="value" t="CP_SECSTATUS"></div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="value" id="corpPrevSecStatus"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-xl-6">
+            <div class="element-wrapper">
+                <div class="element-content">
+                    <div class="row">
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_Killmails", valueId = "corpPrevKillmails" })
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_Contracts", valueId = "corpPrevContracts" })
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_CorpMovings", valueId = "corpPrevCorpMovings" })
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_PrivOrders", valueId = "corpPrevPrivOrders" })
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_IndJobs", valueId = "corpPrevIndJobs" })
+                        @await Html.PartialAsync("_ElementBox", new ElementBoxModel() { label = "CP_Online7d", valueId = "corpPrevOnline7d" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="corpIndMenu">
+    </div>
+</div>

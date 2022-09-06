@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Shared.GeneralTest</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.1.8" />
+    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.1.0" />
+    <PackageReference Include="Moq" Version="4.14.5" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repo.ReadOnly\Repo.ReadOnly.csproj" />
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Shared.ConfigurationHelper\Shared.ConfigurationHelper.csproj" />
+    <ProjectReference Include="..\Shared.CustomDistibutedCache\Shared.CustomDistibutedCache.csproj" />
+    <ProjectReference Include="..\Shared.EsiConnector\Shared.EsiConnector.csproj" />
+    <ProjectReference Include="..\Shared.EventBus\Shared.EventBus.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Z.EntityFramework.Extensions.EFCore">
+      <HintPath>..\libs\z.entityframework.extensions.efcore\3.0.93\lib\netstandard2.1\Z.EntityFramework.Extensions.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+</Project>

@@ -1,0 +1,69 @@
+/*
+    _gradient-linear
+*/
+
+@mixin gradient-linear($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+.bg-gradient-orange-red {
+    background: linear-gradient(to top,#ff9500,#ff3b30) !important
+}
+
+.bg-gradient-red-pink {
+    background: #ff3b30
+}
+
+.bg-gradient-red-pink {
+    background: linear-gradient(to top,#ff3b30,#ff2d55) !important
+}
+
+.bg-gradient-yellow-orange {
+    background: linear-gradient(to top,#fc0,#ff9500) !important
+}
+
+.bg-gradient-yellow-red {
+    background: linear-gradient(to top,#fc0,#ff3b30) !important
+}
+
+.bg-gradient-yellow-green {
+    background: linear-gradient(to top,#fc0,#1abd36) !important
+}
+
+.bg-gradient-cyan-blue {
+    background: linear-gradient(to top,#30beff,#1f6bff) !important
+}
+
+.bg-gradient-cyan-indigo {
+    background: #30beff
+}
+
+.bg-gradient-cyan-indigo {
+    background: linear-gradient(to top,#30beff,#640df3) !important
+}
+
+.bg-gradient-custom-orange {
+    background: linear-gradient(to left,#ff784a,#ff926d) !important
+}
+
+.bg-gradient-custom-pink {
+    background: linear-gradient(to left,#e15671,#e7758a) !important
+}
+
+.bg-gradient-custom-teal {
+    background: linear-gradient(to left,#0aab7b,#0cd096) !important
+}
+
+.bg-gradient-custom-indigo {
+    background: linear-gradient(to left,#8845f5,#aa7af8) !important
+}
+
+.bg-gradient-custom-blue {
+    background: linear-gradient(to left,#1f6bff,#528dff) !important
+}
+/*
+   End _gradient-linear
+*/

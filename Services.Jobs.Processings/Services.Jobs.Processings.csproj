@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public\Databases.Contexts.Public.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Core\Services.Jobs.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Z.EntityFramework.Extensions.EFCore">
+      <HintPath>..\libs\z.entityframework.extensions.efcore\3.0.93\lib\netstandard2.1\Z.EntityFramework.Extensions.EFCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

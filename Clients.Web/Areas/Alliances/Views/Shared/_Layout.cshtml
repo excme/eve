@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    @RenderSection("Scripts", true)
+    <script src="~/js/pages/alliances/profile.js" type="module"></script>
+}
+@* Индивидуальное меню альянса *@
+<div class="d-block">
+    <div class="profile-sidebar">
+        @(await Html.PartialAsync("_ProfileHeader"))
+    </div>
+    <div class="profile-content">
+        @RenderBody()
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public\Databases.Contexts.Public.csproj" />
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Core\Services.Jobs.Core.csproj" />
+  </ItemGroup>
+
+</Project>

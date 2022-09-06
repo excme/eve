@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>eveDirect.Services.EsiConnector</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Databases.Contexts.Public.Models\Databases.Contexts.Public.Models.csproj" />
+    <ProjectReference Include="..\Repo.ReadWrite\Repo.ReadWrite.csproj" />
+    <ProjectReference Include="..\Services.Jobs.Core\Services.Jobs.Core.csproj" />
+    <ProjectReference Include="..\Shared.EsiConnector\Shared.EsiConnector.csproj" />
+  </ItemGroup>
+
+</Project>

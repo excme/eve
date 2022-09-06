@@ -1,0 +1,23 @@
+/*
+	_page-content-full-height
+*/
+.page-content-full-height {
+	height: 100%;
+
+	& .content {
+		min-height: 100%;
+
+		@include media-breakpoint-up(md) {
+			//position: absolute;
+			top: $header-height;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			@include transform(translateZ(0));
+		}
+	}
+}
+/*
+	End _page-content-full-height
+*/
